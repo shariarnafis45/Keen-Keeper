@@ -1,3 +1,4 @@
+import Hero from "@/components/homepage/Hero";
 
 export const metadata = {
     title : "Home | Kin Keeper"
@@ -5,8 +6,10 @@ export const metadata = {
 
 const HomePage = () => {
     return (
-        <div>
-            Home
+        <div className="bg-[#F8FAFC]">
+            <section>
+                <Hero/>
+            </section>
         </div>
     );
 };
