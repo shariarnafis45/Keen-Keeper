@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Aisha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "aisha.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "Met during our Computer Science studies at university. We often collaborate on tech projects and enjoy exploring new cafés.",
+    "goal": 14,
+    "next_due_date": "2025-07-10"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "tanvir.hasan@yahoo.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["office", "gym"],
+    "bio": "Former colleague and regular gym partner. We motivate each other to stay fit and occasionally join local fitness events.",
+    "goal": 14,
+    "next_due_date": "2025-07-18"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["school", "debate club"],
+    "bio": "High school friend who shares a passion for public speaking and community volunteering. We often discuss books and social initiatives.",
+    "goal": 14,
+    "next_due_date": "2025-07-27"
+  },
+  {
+    "id": 4,
+    "name": "Mahmudul Karim",
+    "picture": "https://randomuser.me/api/portraits/men/75.jpg",
+    "email": "mahmudul.karim@outlook.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["cousin", "family"],
+    "bio": "My cousin who lives in Dhaka. We grew up together and still catch up during family gatherings and Eid celebrations.",
+    "goal": 14,
+    "next_due_date": "2025-07-07"
+  },
+  {
+    "id": 5,
+    "name": "Farhana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+    "email": "farhana.akter@gmail.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["volunteering", "community"],
+    "bio": "Met while volunteering at a local charity organization. We enjoy organizing community events and social awareness campaigns.",
+    "goal": 14,
+    "next_due_date": "2025-07-20"
+  },
+  {
+    "id": 6,
+    "name": "Rafiul Islam",
+    "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+    "email": "rafiul.islam@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["startup", "tech"],
+    "bio": "A fellow developer and startup enthusiast. We frequently exchange ideas about new technologies and attend local tech meetups.",
+    "goal": 14,
+    "next_due_date": "2025-07-30"
+  },
+  {
+    "id": 7,
+    "name": "Sadia Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/women/25.jpg",
+    "email": "sadia.chowdhury@gmail.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["travel", "photography"],
+    "bio": "Travel companion who shares a love for photography. We've explored several scenic locations across Bangladesh together.",
+    "goal": 14,
+    "next_due_date": "2025-07-13"
+  },
+  {
+    "id": 8,
+    "name": "Imran Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/18.jpg",
+    "email": "imran.hossain@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["neighbor", "badminton"],
+    "bio": "Friendly neighbor and regular badminton partner. We often play in the evenings and discuss local community news.",
+    "goal": 14,
+    "next_due_date": "2025-07-25"
+  }
+]
