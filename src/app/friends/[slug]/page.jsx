@@ -1,3 +1,5 @@
+
+import Actions from "@/components/shared/Actions";
 import { sendError } from "next/dist/server/api-utils";
 import Image from "next/image";
 import React from "react";
@@ -12,7 +14,19 @@ const FriendDetailsPage = async ({ params }) => {
   const res = await fetch("http://localhost:3000/friendsData.json");
   const friends = await res.json();
   const selectFriend = friends.find((friend) => slug == friend.id);
-  const { name, bio, email, tags, status, picture,days_since_contact,goal,next_due_date } = selectFriend;
+  const {
+    name,
+    bio,
+    email,
+    tags,
+    status,
+    picture,
+    days_since_contact,
+    goal,
+    next_due_date,
+  } = selectFriend;
+
+  
 
   return (
     <div className="bg-[#F8FAFC] py-15 min-h-screen px-5">
@@ -90,41 +104,27 @@ const FriendDetailsPage = async ({ params }) => {
                   <div className="stat-desc">Next Due</div>
                 </div>
               </div>
-              
             </div>
           </div>
           {/* relations */}
           <div className="bg-white p-5 mt-7 shadow-sm rounded-md">
             <div className="flex justify-between items-center">
-              <h2 className="text-xl font-medium text-[#244D3F]">Relationship Goal</h2>
+              <h2 className="text-xl font-medium text-[#244D3F]">
+                Relationship Goal
+              </h2>
               <button className="btn">Edit</button>
             </div>
-            <p className="text-gray-700 mt-3">Connect every <span className="font-bold text-xl text-black">{goal} days</span></p>
+            <p className="text-gray-700 mt-3">
+              Connect every{" "}
+              <span className="font-bold text-xl text-black">{goal} days</span>
+            </p>
           </div>
           {/* check in */}
           <div className="bg-white p-5 mt-7 shadow-sm rounded-md">
-              <h2 className="text-xl font-medium text-[#244D3F]">Quick Check-In</h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 mt-5">
-                <div className="px-8 py-15 bg-[#F8FAFC] shadow-sm flex flex-col  items-center justify-center btn">
-                  <div>
-                    <IoCall className="text-3xl" />
-                  </div>
-                  <p className="text-xl font-medium">Call</p>
-                </div>
-                <div className="px-8 py-15 bg-[#F8FAFC] shadow-sm flex flex-col  items-center justify-center btn">
-                  <div>
-                    <IoMdText className="text-3xl"/>
-                  </div>
-                  <p className="text-xl font-medium">Text</p>
-                </div>
-                <div className="px-8 py-15 bg-[#F8FAFC] shadow-sm flex flex-col  items-center justify-center btn">
-                  <div>
-                    <FaVideo className="text-3xl"/>
-                  </div>
-                  <p className="text-xl font-medium">Video</p>
-                </div>
-              </div>
-            
+            <h2 className="text-xl font-medium text-[#244D3F]">
+              Quick Check-In
+            </h2>
+            <Actions selectFriend={selectFriend}/>
           </div>
         </div>
       </div>

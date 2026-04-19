@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/shared/NavBar";
 import Footer from "@/components/shared/Footer";
+import FriendContextProvider from "../context/FriendContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,13 +28,14 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <header>
-          <NavBar/>
+          <NavBar />
         </header>
-        {children}
+
+        <FriendContextProvider>{children}</FriendContextProvider>
         <footer>
-          <Footer/>
+          <Footer />
         </footer>
-        </body>
+      </body>
     </html>
   );
 }
