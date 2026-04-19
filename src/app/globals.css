@@ -1,4 +1,16 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+.recharts-sector:focus, 
+.recharts-curve:focus, 
+.recharts-wrapper:focus, 
+.recharts-surface:focus {
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+svg:focus {
+    outline: none !important;
+}
 

@@ -15,7 +15,9 @@ const Actions = ({ selectFriend }) => {
       actionType: type,
       date: new Date().toISOString(),
     };
-    toast.success(`${type} with ${selectFriend.name}`)
+    toast.success(`${type} with ${selectFriend.name}`,{
+      position: "top-center",
+    })
     setTimeline([...timeline, newActivity])
   };
   
