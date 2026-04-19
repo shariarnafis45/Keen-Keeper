@@ -5,6 +5,7 @@ import React, { useContext } from "react";
 import { FaVideo } from "react-icons/fa";
 import { IoMdText } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Actions = ({ selectFriend }) => {
   const { timeline, setTimeline } = useContext(FriendContext);
@@ -14,6 +15,7 @@ const Actions = ({ selectFriend }) => {
       actionType: type,
       date: new Date().toISOString(),
     };
+    toast.success(`${type} with ${selectFriend.name}`)
     setTimeline([...timeline, newActivity])
   };
   
