@@ -6,7 +6,7 @@ export const metadata = {
 };
 
 const HomePage = async () => {
-  const res = await fetch("http://localhost:3000//friendsData.json");
+  const res = await fetch("https://keen-keeper-nafix.vercel.app/friendsData.json");
   const friendsdata = await res.json();
   
   return (

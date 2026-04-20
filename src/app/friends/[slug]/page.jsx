@@ -11,7 +11,7 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 
 const FriendDetailsPage = async ({ params }) => {
   const { slug } = await params;
-  const res = await fetch("http://localhost:3000/friendsData.json");
+  const res = await fetch("https://keen-keeper-nafix.vercel.app/friendsData.json");
   const friends = await res.json();
   const selectFriend = friends.find((friend) => slug == friend.id);
   const {
